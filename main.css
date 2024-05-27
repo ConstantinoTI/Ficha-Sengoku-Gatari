@@ -1,0 +1,98 @@
+:root {
+    --blue: #00a2ff;
+    --white: #f4f74d;
+    --black: #165fbe;
+}
+
+body {
+    font-family: monospace;
+    background: var(--BG);
+    color: var(--fontcolor);
+}
+
+ul {
+    font-family: helvetica;
+    color: var(--fontcolor);
+}
+
+li {
+    list-style: circle;
+    color: var(--fontcolor);
+}
+
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    --BG: var(--green);
+    --fontcolor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    --BG: var(--black);
+    --fontcolor: var(--white);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+.btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    position: absolute;
+    top: 20px;
+    left: 1825px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    outline-style: none;
+}
+
+/* Estilos específicos para o tema claro */
+.light-theme body {
+    background: var(--BG);
+    color: var(--fontcolor);
+}
+
+.light-theme ul,
+.light-theme li {
+    color: var(--fontcolor);
+}
+
+/* Estilos específicos para o tema escuro */
+.dark-theme body {
+    background: var(--BG);
+    color: var(--fontcolor);
+}
+
+.dark-theme ul,
+.dark-theme li {
+    color: var(--fontcolor);
+}
+/* Seção para edição das imagens */
+.card img {
+    width: 350px; /* Define a largura da imagem como 100% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem seja exibida como um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilos específicos para o tema claro */
+.light-theme .card img {
+    border: 2px solid var(--fontcolor); /* Adiciona uma b0orda de 2px sólida na cor do texto */
+}
+
+/* Estilos específicos para o tema escuro */
+.dark-theme .card img {
+    border: 2px solid var(--fontcolor); /* Adiciona uma borda de 2px sólida na cor do texto */
+}
+h1, p {
+    text-align: center;
+}
+.card h1,
+.card p {
+    text-align: center;
+}
